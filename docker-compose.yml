@@ -1,0 +1,13 @@
+services:
+  pqc-bench:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pqc-kem-benchmark:latest
+    container_name: pqc-kem-bench
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+      LD_LIBRARY_PATH: /usr/local/lib
+    tty: true

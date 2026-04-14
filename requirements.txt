@@ -1,0 +1,4 @@
+liboqs-python
+psutil
+pandas
+matplotlib
